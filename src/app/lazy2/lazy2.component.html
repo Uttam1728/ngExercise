@@ -1,0 +1,55 @@
+<div class="container-fluid">
+    <div class="alert alert-success Mypadding">
+        <h1>
+            <span style="padding: 0px 25px 0px 0px;">
+        <i class="fab fa-angellist"></i>
+      </span> Lazy Child2 works!
+        </h1>
+        <h2>
+            <span style="padding: 0px 25px 0px 0px;">
+        <i class="fas fa-exclamation-triangle" style="color: red"></i>
+      </span> {{ cdata }}
+        </h2>
+    </div>
+
+    <div class="block">
+        <div class="card Mypadding" style="background-color: #cce5ff;color: #004085;">
+            <div class="card-body ">
+                <h4 class="card-title">
+                    <span style="padding: 0px 5px 0px 0px;">
+            <i class="fa fa-gears" style="color:#ff6633;"></i>
+          </span>Config details
+                </h4>
+                <table class="table" style="background-color: #cce5ff;color: #004085;">
+                    <tr>
+                        <td>
+                            <span style="padding: 0px 5px 0px 0px;">
+                <i class="fa fa-code-fork" style="color: #b35900;"></i>
+              </span> ApiName
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            {{ configdata.AppName }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span style="padding: 0px 5px 0px 0px;">
+                <i class="fa fa-rss" style="color: #b35900;"></i>
+              </span> ApiURl
+                        </td>
+                        <td>
+                            :
+                        </td>
+                        <td>
+                            {{ configdata.EndPoint }}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
