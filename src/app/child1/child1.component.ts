@@ -1,3 +1,4 @@
+import { IApiconfig } from './../api.config';
 import { LogServiceService } from './../log.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Child1Component implements OnInit {
   cdata = ''
-  configdata: import("c:/Users/uradadiya/MyHHA/AngularTraining/01.02.2021/FirstAngApp/src/app/api.config").IApiconfig;
+  configdata : IApiconfig
   constructor(private logService : LogServiceService) { }
 
   ngOnInit(): void {

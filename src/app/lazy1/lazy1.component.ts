@@ -1,3 +1,4 @@
+import { IApiconfig } from './../api.config';
 import { Component, OnInit } from '@angular/core';
 import { LogServiceService } from '../log.service';
 
@@ -8,8 +9,7 @@ import { LogServiceService } from '../log.service';
 })
 export class Lazy1Component implements OnInit {
   cdata: string;
-  configdata: import("c:/Users/uradadiya/MyHHA/AngularTraining/01.02.2021/FirstAngApp/src/app/api.config").IApiconfig;
-
+  configdata: IApiconfig
   constructor(private logService : LogServiceService) { }
 
   ngOnInit(): void {
